@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 // トークンの用意
-const token = 'NzAwMjY0MzU0NDk4NDc4MDk3.Xp1fkw.8I1VpQ8HeQ0dhyHf3Im6W9N-PpI';
+const token = '';
 
 // 準備完了イベントのconsole.logで通知黒い画面に出る。
 client.on('ready', () => {
