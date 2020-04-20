@@ -32,7 +32,8 @@ client.on('message', message => {
         scrpicup(); //スクラッチに表示されるスタンプを選択
         scrprob();  //スクラッチの9個の要素をランダムに配置し、scrans[]に格納
         for(let m = 0; m<scrans.length; m++){   //正方形に要素を配置し、Discordのチャットに送信
-            inscrans += scrans[m];              //横に要素を一定数配置
+            const emoji = client.emojis.find( "name", scrans[m]);
+            inscrans += emoji;              //横に要素を一定数配置
             if(((m + 1) % Math.sqrt(scrans.length)) === 0){
             message.channel.send(inscrans);     //一定数の配置が終わったら画面に表示し、次の行にうつる
                 inscrans = "";
