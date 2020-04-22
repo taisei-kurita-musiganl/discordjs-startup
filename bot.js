@@ -38,7 +38,7 @@ client.on('message', message => {
             }
         }
         inscrans += `あなたはスクラッチで${scrhit}を獲得しました！\nおめでとうございます！`
-        message.channel.send(inscrans);     //一定数の配置が終わったら画面に表示し、次の行にうつる
+        message.channel.send(inscrans);     //画面に表示
         countfifty = 0, countthirty = 0, counttwen = 0;　//各種変数をクリアする
         randoms = [], scr = [], strname = [], scrans = [];
         inscrans = "";
