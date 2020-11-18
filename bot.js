@@ -119,7 +119,7 @@ function scrprob(){                                 //ピックアップした�
     let scrindstaykmr = scrans.indexOf("||<:staykmr:701721639234306058>||");
     if(scrindyuito != -1 && scrindstaykmr != -1 && x < 0.85){
         let y = rand(0,1);
-        if(rand == 0){
+        if(y == 0){
             scrans.push("||<:yuito:680700194291056651>||");
             scrhit = "||<:yuito:680700194291056651>||";
         }else{
