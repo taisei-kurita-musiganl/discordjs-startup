@@ -43,6 +43,9 @@ client.on('message', message => {
         randoms = [], scr = [], strname = [], scrans = [];
         inscrans = "";
     }
+    else if (message.content === ".com"){
+        message.channel.send("<:aoki:680707598831321100> aoki.com <:aoki:680707598831321100>");
+    }
 });
 
 
